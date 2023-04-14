@@ -1,0 +1,57 @@
+﻿@page
+@using HealthEquity.API.Services;
+@model HealthEquity.API.Pages.ListCarsModel
+@{
+    ViewData["Title"] = "Inventory";
+}
+
+@inject ICarService _carService
+
+<h1>Car List</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Your Guess</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.Cars)
+        {
+            <tr>
+                <td>@car.Make</td>
+                <td>@car.Model</td>
+                <td>@car.Year</td>
+                <td>@car.Color</td>
+                <td>
+                    <input type="number" id="@($"guess-{car.Id}")" step="100" required />
+                    <button type="button" onclick="checkGuess(@car.Id, @car.Price)">Guess</button>
+                </td>
+                <td>
+                    <span id="@($"result-{car.Id}")"></span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function checkGuess(carId, price) {
+        var guessField = document.getElementById(`guess-${carId}`);
+        var resultField = document.getElementById(`result-${carId}`);
+        var guess = parseFloat(guessField.value);
+        var difference = Math.abs(price - guess);
+        if (difference <= 5000) {
+            resultField.style.color = 'green';
+            resultField.innerHTML = 'Great job! Your guess is correct or close to the price';
+        } else {
+            resultField.style.color = 'red';
+            resultField.innerHTML = 'Sorry, your guess was not within $5,000 of the actual price.';
+        }
+    }
+</script>

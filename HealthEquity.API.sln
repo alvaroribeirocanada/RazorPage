@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthEquity.API", "HealthEquity.API\HealthEquity.API.csproj", "{E1C81E96-3CAF-4AE0-9B1A-B6BE2DC7BB19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthEquity.API.Tests", "HealthEquity.API.Tests\HealthEquity.API.Tests.csproj", "{C7753A0F-DE3D-4215-A422-B8384FF13BCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1C81E96-3CAF-4AE0-9B1A-B6BE2DC7BB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C81E96-3CAF-4AE0-9B1A-B6BE2DC7BB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C81E96-3CAF-4AE0-9B1A-B6BE2DC7BB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C81E96-3CAF-4AE0-9B1A-B6BE2DC7BB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7753A0F-DE3D-4215-A422-B8384FF13BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7753A0F-DE3D-4215-A422-B8384FF13BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7753A0F-DE3D-4215-A422-B8384FF13BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7753A0F-DE3D-4215-A422-B8384FF13BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E66C2B21-B20A-4ECE-8970-715E16882458}
+	EndGlobalSection
+EndGlobal
