@@ -8,7 +8,7 @@
 
 4 - Run the application(Swagger page) - http://localhost:5053/swagger/index.html
 
-5 - To navigate the razor page, browse http://localhost:5053/ListCars
+5 - To navigate to the razor page, browse http://localhost:5053/ListCars
 
 
 # Sql Exercise
